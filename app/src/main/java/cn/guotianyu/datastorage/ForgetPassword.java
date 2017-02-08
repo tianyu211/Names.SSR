@@ -27,7 +27,7 @@ public class ForgetPassword extends AppCompatActivity {
     private EditText et_forgotUser;
     private Button bt_findPassword;
     private ListView lv_forgotPassword;
-    private List<ForgotInfo> forgotInfos;
+    private List<Info> infos;
     private SQLiteDatabase dbr;
     private DBHelper db;
 
@@ -72,17 +72,17 @@ public class ForgetPassword extends AppCompatActivity {
             forgotPasswrod = c.getString(2);//获取密码
 //            System.out.println("用户名："+forgotUser+"密码："+forgotPasswrod);
             //给ListView绑定数据
-            forgotInfos = new ArrayList<ForgotInfo>();
-            ForgotInfo f1 = new ForgotInfo();
-            f1.setForgotUser("用户名");
-            f1.setForgotPsassword("密码");
+            infos = new ArrayList<Info>();
+            Info f1 = new Info();
+            f1.setUsername("用户名");
+            f1.setPassword("密码");
 
-            ForgotInfo f2 = new ForgotInfo();
-            f2.setForgotUser(forgotUser);
-            f2.setForgotPsassword(forgotPasswrod);
+            Info f2 = new Info();
+            f2.setUsername(forgotUser);
+            f2.setPassword(forgotPasswrod);
 
-            forgotInfos.add(f1);
-            forgotInfos.add(f2);
+            infos.add(f1);
+            infos.add(f2);
 
             lv_forgotPassword.setAdapter(new myAdapter());
             Toast.makeText(this,"盒盒，请查看你的密码...",Toast.LENGTH_SHORT).show();
@@ -113,7 +113,7 @@ public class ForgetPassword extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return forgotInfos.size();
+            return infos.size();
         }
 
         @Override
@@ -133,9 +133,9 @@ public class ForgetPassword extends AppCompatActivity {
             TextView user = (TextView) v.findViewById(R.id.tv_forgotUser);
             TextView password = (TextView) v.findViewById(R.id.tv_forgetPassword);
             //把当前位置的对象取出来
-            ForgotInfo forgotInfo = forgotInfos.get(position);
-            user.setText(forgotInfo.getForgotUser());
-            password.setText(forgotInfo.getForgotPsassword());
+            Info info = infos.get(position);
+            user.setText(info.getUsername());
+            password.setText(info.getPassword());
             return v;
         }
     }

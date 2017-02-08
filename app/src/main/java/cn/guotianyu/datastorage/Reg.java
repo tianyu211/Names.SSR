@@ -36,6 +36,7 @@ public class Reg extends AppCompatActivity {
         setContentView(R.layout.reg);
 
         db = new DBHelper(this);
+
         et_reguser = (EditText) findViewById(R.id.et_reguser);
         et_regpassword = (EditText) findViewById(R.id.et_regpassword);
         bt_reg = (Button) findViewById(R.id.bt_reg);
