@@ -28,6 +28,8 @@ public class Reg extends AppCompatActivity {
     private String reg_username;
     private String reg_password;
 
+    private SQLiteDatabase dbw;
+    private SQLiteDatabase dbr;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,10 +58,10 @@ public class Reg extends AppCompatActivity {
             Toast.makeText(Reg.this,"用户名或者密码不能为空！",Toast.LENGTH_SHORT).show();
             return;
         }
-        //得到可以读取的数据库dbr
-        SQLiteDatabase dbr = db.getReadableDatabase();
-        //得到可以写入的数据库dbw
-        SQLiteDatabase dbw = db.getWritableDatabase();
+        //获取可读数据库,Activity销毁时记得关闭
+        dbr = db.getReadableDatabase();
+        //得到可以写入的数据库dbw,Activity销毁时记得关闭
+        dbw = db.getWritableDatabase();
 
         Cursor cursor = dbr.rawQuery("select * from qq where username=?", new String[]{reg_username});
         if(cursor.moveToNext()){
@@ -68,13 +70,12 @@ public class Reg extends AppCompatActivity {
         }else {
             dbw.execSQL("insert into qq(username,password) values(?,?)",new String[]{reg_username,reg_password});
             Toast.makeText(this,"注册成功！",Toast.LENGTH_SHORT).show();
-            dbr.close();
             cursor.close();
+            dbr.close();
             dbw.close();
-
             finish();
         }
-
     }
+
 }
 

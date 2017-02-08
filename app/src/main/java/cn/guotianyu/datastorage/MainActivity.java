@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     private String username;
     private String password;
+
+    private SQLiteDatabase dbr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //得到可读数据库
-        SQLiteDatabase dbr = db.getReadableDatabase();
+        dbr = db.getReadableDatabase();
         //把输入的账号密码与数据库对比
         Cursor cursor = dbr.rawQuery("select * from qq where username=? and password=?",new String[]{username,password});
         if(cursor.moveToNext()){
@@ -94,6 +96,6 @@ public class MainActivity extends AppCompatActivity {
         }
         cursor.close();
         dbr.close();
-        db.close();
     }
+
 }
