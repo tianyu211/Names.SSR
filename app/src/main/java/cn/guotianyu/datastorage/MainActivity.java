@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         if(cursor.moveToNext()){
             //开启新Activity并传递数据
             Intent intent = new Intent(MainActivity.this,Home.class);
-            intent.putExtra("user",username);
-            intent.putExtra("password",password);
+//            intent.putExtra("user",username);
+//            intent.putExtra("password",password);
             startActivity(intent);
         }else{
             Toast.makeText(this,"登录失败，用户名或密码不正确!",Toast.LENGTH_SHORT).show();
