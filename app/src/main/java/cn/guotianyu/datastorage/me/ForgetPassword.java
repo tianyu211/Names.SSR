@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.me;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.guotianyu.datastorage.R;
 
 /**
  * Created by 郭天宇 on 2017/2/7.

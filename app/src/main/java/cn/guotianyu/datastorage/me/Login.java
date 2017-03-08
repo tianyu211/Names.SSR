@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.me;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import cn.guotianyu.datastorage.R;
+import cn.guotianyu.datastorage.fragment.HomeFragment;
 
 /**
  * Created by 郭天宇 on 2017/3/6.

@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.me;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -20,11 +20,11 @@ public class DBOperate {
 //        db = new DBHelper(context);
 //    }
 //    //查询
-//    public List<Info> select(String table, String column[]){
+//    public List<HomeInfo> select(String table, String column[]){
 //        dbr = db.getReadableDatabase();
 //        Cursor c =dbr.rawQuery("select * from ? where column[]",new String[]{table});
 //
-//        List<Info> list = new ArrayList<Info>();
+//        List<HomeInfo> list = new ArrayList<HomeInfo>();
 //        c.close();
 //        dbr.close();
 //        return list;

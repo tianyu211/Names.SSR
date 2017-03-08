@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.me;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -24,11 +24,11 @@
 
     <ImageButton
         android:id="@+id/id_title_right_btn"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_marginRight="14dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:background="@mipmap/iris_scan"/>
+        android:background="@mipmap/menu"/>
 
 </RelativeLayout>

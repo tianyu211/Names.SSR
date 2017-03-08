@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import cn.guotianyu.datastorage.R;
+
 /**
- * Created by 郭天宇 on 2017/3/6.
+ * Created by 郭天宇 on 2017/3/7.
  */
 
-public class HomeFragment extends Fragment {
+public class FindFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_content, container, false);
+        return inflater.inflate(R.layout.fragment_find,container,false);
     }
 }

@@ -15,13 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Reg">
+        <activity android:name=".me.Reg">
 
         </activity>
-        <activity android:name=".ForgetPassword">
+        <activity android:name=".me.ForgetPassword">
 
         </activity>
-        <activity android:name=".Login">
+        <activity android:name=".me.Login">
 
         </activity>
     </application>

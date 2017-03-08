@@ -16,7 +16,7 @@
         android:orientation="horizontal">
         <!--首页-->
         <LinearLayout
-            android:id="@+id/tab_lv_home"
+            android:id="@+id/ll_tab_home"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -24,21 +24,20 @@
             android:clickable="true"
             android:layout_weight="1">
             <ImageView
-                android:layout_width="30dp"
+                android:id="@+id/iv_bottom_home"
+                android:layout_width="27dp"
                 android:layout_height="30dp"
-                android:src="@mipmap/indoor_camera"/>
-
+                android:src="@mipmap/home_normal"/>
             <TextView
-                android:id="@+id/tv_home"
+                android:id="@+id/tv_bottom_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:textColor="#008000"
                 android:text="首页"/>
         </LinearLayout>
-        <!--会话-->
+        <!--电影-->
         <LinearLayout
-            android:id="@+id/tab_lv_movie"
+            android:id="@+id/ll_tab_movie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -46,12 +45,13 @@
             android:clickable="true"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/iv_bottom_movie"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@mipmap/antivirus_scanner"/>
+                android:src="@mipmap/movie_normal"/>
 
             <TextView
-                android:id="@+id/tv_movie"
+                android:id="@+id/tv_bottom_movie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
@@ -59,7 +59,7 @@
         </LinearLayout>
         <!--发现-->
         <LinearLayout
-            android:id="@+id/tab_lv_find"
+            android:id="@+id/ll_tab_find"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -67,20 +67,21 @@
             android:clickable="true"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/iv_bottom_find"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@mipmap/show_password"/>
+                android:src="@mipmap/find_normal"/>
 
             <TextView
-                android:id="@+id/tv_find"
+                android:id="@+id/tv_bottom_find"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:text="发现"/>
         </LinearLayout>
-        <!--电影-->
+        <!--我-->
         <LinearLayout
-            android:id="@+id/tab_lv_me"
+            android:id="@+id/ll_tab_me"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -88,12 +89,13 @@
             android:clickable="true"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/iv_bottom_me"
+                android:layout_marginTop="3dp"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@mipmap/fingerprint_scan"/>
-
+                android:layout_height="27dp"
+                android:src="@mipmap/fingerprint_normal"/>
             <TextView
-                android:id="@+id/tv_me"
+                android:id="@+id/tv_bottom_me"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
