@@ -25,8 +25,8 @@ public class HomeFragment extends Fragment {
     private ListView lv;
     private List<HomeInfo> homeInfos;
 
-    //这里不用onCreate而是onStart
-//    @Override
+    //如何implement万恶的ListView？？
+//       @Override
 //    public void onStart() {
 //        super.onStart();
 //        lv = (ListView) getView().findViewById(R.id.lv_home);
