@@ -10,7 +10,7 @@
         android:id="@+id/id_fragment_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:name="cn.guotianyu.datastorage.fragment.TitleFragment"/>
+        android:name="cn.guotianyu.datastorage.TitleFragment"/>
     <include
         android:id="@+id/id_ly_bottom"
         android:layout_width="match_parent"
@@ -23,6 +23,6 @@
         android:layout_height="match_parent"
         android:layout_above="@id/id_ly_bottom"
         android:layout_below="@id/id_fragment_title"
-        android:name="cn.guotianyu.datastorage.fragment.HomeFragment"/>
+        android:name="cn.guotianyu.datastorage.home.HomeFragment"/>
 
 </RelativeLayout>

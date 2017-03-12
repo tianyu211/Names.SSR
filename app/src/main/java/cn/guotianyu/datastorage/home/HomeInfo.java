@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage;
+package cn.guotianyu.datastorage.home;
 
 /**
  * Created by 郭天宇 on 2017/3/7.

@@ -24,6 +24,9 @@
         <activity android:name=".me.Login">
 
         </activity>
+        <activity android:name=".home.HomeDetail">
+
+        </activity>
     </application>
 
 </manifest>

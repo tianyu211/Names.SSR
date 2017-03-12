@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import cn.guotianyu.datastorage.fragment.FindFragment;
-import cn.guotianyu.datastorage.fragment.HomeFragment;
-import cn.guotianyu.datastorage.fragment.MeFragment;
+import cn.guotianyu.datastorage.home.HomeFragment;
+import cn.guotianyu.datastorage.me.MeFragment;
 import cn.guotianyu.datastorage.fragment.MovieFragment;
 
 

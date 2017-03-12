@@ -1,4 +1,4 @@
-package cn.guotianyu.datastorage.fragment;
+package cn.guotianyu.datastorage;
 
 import android.app.Activity;
 import android.os.Bundle;

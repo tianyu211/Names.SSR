@@ -130,7 +130,7 @@ public class ForgetPassword extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View v = View.inflate(ForgetPassword.this,R.layout.forgotpassworditem,null);
+            View v = View.inflate(ForgetPassword.this,R.layout.item_forgorpassword,null);
             //在item中绑定控件
             TextView user = (TextView) v.findViewById(R.id.tv_forgotUser);
             TextView password = (TextView) v.findViewById(R.id.tv_forgetPassword);
